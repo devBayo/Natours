@@ -146,4 +146,5 @@ body {
 .btn-white:visited {
   color: #777;
   background-color: #fff;
+  /* box-shadow: x-offset y-offset blur-radius spread-radius; */
 }
