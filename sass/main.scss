@@ -1,7 +1,7 @@
 /*
 COLORS:
 
-Light green: #7ed56f
+Light green: #7ed56f 
 Medium green: #55c57a
 Dark green: #28b485
 
@@ -10,6 +10,7 @@ Dark green: #28b485
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+$color-grey-dark: #777;
 
 *,
 *::after,
@@ -28,7 +29,7 @@ body {
   font-weight: 400;
   /* font-size: 1.6rem; */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -169,7 +170,7 @@ body {
 
 .btn--white:link,
 .btn--white:visited {
-  color: #777;
+  color: $color-grey-dark;
   background-color: #fff;
 }
 
