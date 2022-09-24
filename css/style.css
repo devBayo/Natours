@@ -84,7 +84,18 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    transform: skew(15deg, 2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -159,7 +170,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row::after {
     content: '';
@@ -168,7 +178,6 @@ body {
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^='col-'] {
-    background-color: orangered;
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
