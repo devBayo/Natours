@@ -242,6 +242,15 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 150rem;
+  -webkit-perspective: 150rem;
+  background-color: orangered;
+  height: 50rem;
+  transition: all 0.8s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 .header {
   position: relative;
   height: 95vh;

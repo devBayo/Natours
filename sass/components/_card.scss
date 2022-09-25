@@ -1,0 +1,14 @@
+.card {
+  perspective: 150rem;
+  -webkit-perspective: 150rem;
+  background-color: orangered;
+  height: 50rem;
+  transition: all 0.8s;
+
+  &__side {
+  }
+
+  &:hover &__side {
+    transform: rotateY(180deg);
+  }
+}
