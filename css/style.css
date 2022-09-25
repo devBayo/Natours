@@ -245,11 +245,33 @@ body {
 .card {
   perspective: 150rem;
   -webkit-perspective: 150rem;
-  background-color: orangered;
-  height: 50rem;
-  transition: all 0.8s; }
-  .card:hover .card__side {
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 50rem;
+    width: 100%;
+    transition: all 0.8s ease;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff;
+      z-index: 2; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to bottom right, #ffb900, #ff7730); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0);
+    z-index: 3; }
 
 .header {
   position: relative;
