@@ -138,6 +138,10 @@ body {
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
 
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
+
 .btn:link, .btn:visited {
   position: relative;
   display: inline-block;
@@ -349,6 +353,13 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px; }
 
 .header {
   position: relative;
