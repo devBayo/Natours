@@ -517,7 +517,9 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 3000; }
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden; }
   .popup__content {
     width: 75%;
     background-color: #fff;
