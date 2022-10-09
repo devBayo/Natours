@@ -592,11 +592,18 @@ body {
     width: 80%;
     float: right; }
 
+.navigation__checkbox {
+  display: none; }
+
 .navigation__button {
   background-color: #fff;
   height: 7rem;
   width: 7rem;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000; }
 
 .navigation__background {
   height: 6rem;
@@ -607,3 +614,17 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000; }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1001; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
