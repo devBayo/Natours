@@ -23,7 +23,8 @@
       overflow: hidden;
 
       opacity: 0;
-      transform: translate(-50%, -50%) scale(0.5);
+      transform: translate(-50%, -50%) scale(0.25);
+      transition: all 0.5s 0.2s;
     }
   }
 
@@ -58,6 +59,7 @@
     hyphens: auto;
   }
 
+  // Open state of popup
   &:target {
     opacity: 1;
     visibility: visible;
