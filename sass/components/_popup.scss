@@ -8,6 +8,10 @@
   background-color: rgba($color-black, 0.8);
   z-index: 3000;
 
+  //hides form
+  opacity: 0;
+  visibility: hidden;
+
   &__content {
     @include centerH-V;
 
