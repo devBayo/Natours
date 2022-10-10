@@ -1,4 +1,19 @@
 /*
+0 - 600px Phone
+600 - 900px Tablet Portrait
+900 - 1200px Tablet Landscape
+1200 - 1800 normal styles
+1800+ Big Desktop
+*/
+/*
+- phone
+- tab-portrait
+- tab-landscape
+- big-desktop
+
+1em - 16px
+*/
+/*
 COLORS:
 
 Light green: #7ed56f 
@@ -16,6 +31,15 @@ Dark green: #28b485
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 @keyframes moveInLeft {
   0% {
