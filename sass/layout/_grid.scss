@@ -12,6 +12,10 @@
     }
   }
 
+  @include respond(tab-portrait) {
+   max-width: 50rem;
+  }
+
   [class^='col-'] {
     float: left;
 
