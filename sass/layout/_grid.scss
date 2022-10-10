@@ -6,6 +6,10 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-portrait) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   [class^='col-'] {
@@ -13,6 +17,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-portrait) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-portrait) {
+      width: 100% !important;
     }
   }
 
