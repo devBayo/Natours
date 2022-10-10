@@ -729,13 +729,6 @@ body {
   color: #55c57a;
   transform: translateX(1rem); }
 
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(100); }
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100vw; }
-
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem;
@@ -760,6 +753,13 @@ body {
 
 .navigation__button:hover .navigation__icon::after {
   top: 1rem; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(100); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100vw; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }

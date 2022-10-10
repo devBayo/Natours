@@ -91,16 +91,6 @@
     }
   }
 
-  // Funationality
-  &__checkbox:checked ~ &__background {
-    transform: scale(100);
-  }
-
-  &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    width: 100vw;
-  }
-
   // Icon
   &__icon {
     position: relative;
@@ -141,6 +131,16 @@
     &::after {
       top: 1rem;
     }
+  }
+
+  // Funationality
+  &__checkbox:checked ~ &__background {
+    transform: scale(100);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100vw;
   }
 
   &__checkbox:checked + &__button &__icon {
