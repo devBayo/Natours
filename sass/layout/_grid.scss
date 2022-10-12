@@ -13,7 +13,8 @@
   }
 
   @include respond(tab-portrait) {
-   max-width: 50rem;
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   [class^='col-'] {
